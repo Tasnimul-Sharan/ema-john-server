@@ -51,7 +51,7 @@ async function run() {
       const cursor = productCollection.find(query);
       const products = await cursor.toArray();
       console.log(keys);
-      req.send(products);
+      res.send(products);
     });
   } finally {
   }
